@@ -7,7 +7,7 @@ function LandingPage() {
     <div  data-scroll data-scroll-section data-scroll-speed="-.1" className="w-full h-screen bg-zinc-900 pt-1">
       {/* Main Heading Section */}
       <div className="textStructure mt-48 px-20">
-        {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
+        {["Swap what you know,", "learn what you don't."].map((item, index) => (
           <div className="masker" key={index}>
             <div className="w-fit flex items-center gap-4">
               {/* Green Box for the Second Line */}
@@ -16,7 +16,7 @@ function LandingPage() {
                animate={{width:"9vw"}} 
                transition={{ease:[0.76,0,0.24,1],duration:1}} 
                className="w-[6vw] h-[5vw] bg-green-200"></motion.div>}
-              <h1 className='uppercase text-[6vw] leading-[5.5vw] tracking-tighter font-["Founders_Grotesk_X_Condensed"] font-semibold'>
+              <h1 className='uppercase text-[5vw] leading-[4.5vw] tracking-tighter font-["Founders_Grotesk_X_Condensed"] font-semibold'>
                 {item}
               </h1>
             </div>
@@ -27,8 +27,8 @@ function LandingPage() {
       {/* Subtext Section */}
       <div className="border-t-[1px] border-zinc-700 mt-28 flex justify-between items-center py-5 px-20">
         {[
-          "For public and private companies",
-          "From the first pitch to IPO",
+          "Connect with global learners",
+          "Share skills, grow together",
         ].map((item, index) => (
           <p
             className="text-lg font-light tracking-tight leading-snug text-zinc-300"

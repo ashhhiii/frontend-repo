@@ -19,9 +19,9 @@ const Marquee = () => {
             animate={{ x: "-100%" }}
             transition={{ ease: "linear", repeat: Infinity, duration: 30 }}
               key={index}
-              className="text-[13vw] leading-none font-['Founders_Grotesk'] font-semibold uppercase pt-8"
+              className="text-[13vw] leading-none font-['Founders_Grotesk'] font-semibold uppercase pt-8 mr-20"
             >
-              we are ochi
+              we are skillswap
             </motion.h1>
           ))}
         </motion.div>
