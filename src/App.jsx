@@ -15,6 +15,8 @@ import CoverPage from './Components/CoverPage';
 import SignIn from './Components/SignIn';
 import SignUp from './Components/SignUp';
 import UserProfile from './Components/UserProfile';
+import ShapeRequest from './Components/ShapeRequest';
+import ExchangeSetup from './Components/ExchangeSetup';
 
 function App() {
   
@@ -23,6 +25,8 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/requests" element={<ShapeRequest />} />
+        <Route path="/setup-exchange" element={<ExchangeSetup />} />
         <Route path="/profile" element={<UserProfile />} />
         <Route path="/" element={<CoverPage />} />
         <Route path="/signin" element={<SignIn />} />
