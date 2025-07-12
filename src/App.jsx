@@ -17,6 +17,7 @@ import SignUp from './Components/SignUp';
 import UserProfile from './Components/UserProfile';
 import ShapeRequest from './Components/ShapeRequest';
 import ExchangeSetup from './Components/ExchangeSetup';
+import SwapRequests from './Components/SwapRequests';
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/requests" element={<SwapRequests />} />
         <Route path="/requests" element={<ShapeRequest />} />
         <Route path="/setup-exchange" element={<ExchangeSetup />} />
         <Route path="/profile" element={<UserProfile />} />
