@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CoverPage from './Components/CoverPage';
 import SignIn from './Components/SignIn';
 import SignUp from './Components/SignUp';
+import UserProfile from './Components/UserProfile';
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/profile" element={<UserProfile />} />
         <Route path="/" element={<CoverPage />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
